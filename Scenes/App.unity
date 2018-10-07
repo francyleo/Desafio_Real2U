@@ -587,6 +587,22 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224963544656122724, guid: fd0f0f083805c1e4fbddf6d14657ee63,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.079956
+      objectReference: {fileID: 0}
+    - target: {fileID: 224847991071404582, guid: fd0f0f083805c1e4fbddf6d14657ee63,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.079956
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586132979272266, guid: fd0f0f083805c1e4fbddf6d14657ee63,
+        type: 2}
+      propertyPath: personagem
+      value: 
+      objectReference: {fileID: 1814420342466240, guid: 0cc34260958c8d147891119e95c29fa1,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd0f0f083805c1e4fbddf6d14657ee63, type: 2}
   m_IsPrefabAsset: 0
