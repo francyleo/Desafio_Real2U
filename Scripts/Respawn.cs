@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/* using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +9,7 @@ public class Respawn : MonoBehaviour
 	[SerializeField]
 	private GameObject personagem;//Variavel para armazerar o Prefab do Personagem
 	[SerializeField]
-	private Transform respawn;//Variavel para indicar a posição em que vai aparecer o personagem
+	private Transform resp;//Variavel para indicar a posição em que vai aparecer o personagem
 	private bool isCreate;//variavel de controle de quantidade de personagem
 	//Variaveis criada para o clone instaciado do personagem
 	private GameObject clone;
@@ -33,17 +33,14 @@ public class Respawn : MonoBehaviour
 	public void create()
 	{
 		//pegar posicionamento e rotacionamento digitado
-		respawn.position = new Vector3(float.Parse(posX.text),float.Parse(posY.text),float.Parse(posZ.text));
+		resp.position = new Vector3(float.Parse(posX.text),float.Parse(posY.text),float.Parse(posZ.text));
 		//verificar se o personagem ja esta na tela
 		if(!isCreate)
 		{
-			clone = Instantiate(personagem,respawn.position,Quaternion.identity);
+			clone = Instantiate(personagem,resp.position,Quaternion.identity);
 			clone.transform.Rotate (float.Parse(rotX.text),float.Parse(rotY.text),float.Parse(rotZ.text),Space.Self);
 			isCreate = true;//para não criar mais de 1
 		}else {
-			/*	Caso Já esteja na cena, o Personagem é deletado e enseguida
-			 	Adicionado outro com as coordenadas Atualizadas
-			 */
 			delete();
 			create();
 		}
@@ -59,3 +56,4 @@ public class Respawn : MonoBehaviour
 		}
 	}
 }
+ */
