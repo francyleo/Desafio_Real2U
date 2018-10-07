@@ -41,6 +41,9 @@ public class Respawn : MonoBehaviour
 			clone.transform.Rotate (float.Parse(rotX.text),float.Parse(rotY.text),float.Parse(rotZ.text),Space.Self);
 			isCreate = true;//para não criar mais de 1
 		}else {
+			/*	Caso Já esteja na cena, o Personagem é deletado e enseguida
+			 	Adicionado outro com as coordenadas Atualizadas
+			 */
 			delete();
 			create();
 		}
