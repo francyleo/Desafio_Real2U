@@ -33,7 +33,7 @@ public class Respawn : MonoBehaviour
 
 	void Start ()
 	{
-		aces = 130f;
+		aces = 390f;
 	}
 
 	//Função para instanciar clone do personagem na tela(Prefab)
